@@ -106,7 +106,7 @@
     // LAWSON or OWSON
     // ===============
     else if(brand_name == 'lawson' || brand_name == 'owson') {
-      $.fn.convenience_store.include_font("Maiden+Orange::latin"); // 'Smokum::latin', 'Bevan::latin', 'Wellfleet::latin'
+      $.fn.convenience_store.include_font("Kameron:700"); // 'Podkova:700', 'Noticia+Text:700', 'Crete+Round', 'Kreon:700', 'Maiden+Orange::latin','Smokum::latin', 'Bevan::latin', 'Wellfleet::latin'
       $this.css({
         "background-color": "#1c7dc2",
         "line-height": "1.0",
@@ -125,10 +125,11 @@
         "border-bottom": "solid 3px #fff",
         "color": "#fff",
         "display": "block",
-        "font-family": "Maiden Orange",
+        "font-family": "Kameron", // Podkova, Noticia Text, Crete Round, Kreon, Maiden Orange
         "font-style": "normal",
         "font-weight": "bold",
         "left": "2%",
+        "letter-spacing": "0",
         "padding": "10px 1% 11px",
         "text-transform": "uppercase"
       };
