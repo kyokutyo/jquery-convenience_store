@@ -116,7 +116,6 @@
       var style = {
         "border-top": "solid 3px #fff",
         "background-color": "#e74c98",
-        "content": "hoge",
         "display": "block",
         "height": "8px",
         "width": "100%"
