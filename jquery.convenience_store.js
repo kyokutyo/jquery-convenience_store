@@ -130,7 +130,7 @@
         "font-weight": "bold",
         "left": "2%",
         "letter-spacing": "0",
-        "padding": "10px 1% 11px",
+        "padding": "6px 1% 16px",
         "text-transform": "uppercase"
       };
       var $line = $('<div>').css(style);
