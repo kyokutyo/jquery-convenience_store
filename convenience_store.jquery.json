@@ -1,0 +1,29 @@
+{
+	"name": "convenience_store",
+	"title": "jquery.convenience_store.js",
+	"description": "A jQuery plugin provides Japanese convenience store styles.",
+	"version": "0.0.1",
+	"homepage": "https://github.com/kyokutyo/jquery-convenience_store",
+	"author": {
+		"name": "kyokutyo",
+		"email": "kyokutyo@gmail.com",
+		"url": "http://kyokutyo.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/kyokutyo/jquery-convenience_store.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kyokutyo/jquery-convenience_store/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://raw.github.com/kyokutyo/jquery-convenience_store/master/MIT-Licence.txt"
+		}
+	],
+	"dependencies": {
+		"jquery": ">= 1.6"
+	},
+	"keywords": ["japan"]
+}
