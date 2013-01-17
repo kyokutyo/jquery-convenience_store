@@ -2,7 +2,7 @@
 	"name": "convenience_store",
 	"title": "jQuery Convenience store",
 	"description": "A jQuery plugin provides Japanese convenience store styles.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"homepage": "http://kyokutyo.github.com/jquery-convenience_store/",
 	"author": {
 		"name": "kyokutyo",

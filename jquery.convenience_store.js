@@ -1,13 +1,13 @@
 ;(function($, undefined) {
   $.fn.convenience_store = function(brand_name, options) {
-    var brands = $.fn.convenience_store.allows;
+    var brands = $.fn.convenience_store.available_brands;
     if(brand_name === undefined || brand_name == '' || (brands.indexOf(brand_name) == -1)) return;
     return this.each(function() {
       $.fn.convenience_store.style($(this), brand_name);
     });
   };
-  $.fn.convenience_store.allows = ['seveneleven', 'familymart', 'lawson', 'owson'];
-  $.fn.convenience_store.include_font = function(font) {
+  $.fn.convenience_store.available_brands = ['seveneleven', 'familymart', 'lawson', 'owson'];
+  $.fn.convenience_store.load_font = function(font) {
     WebFontConfig = {
       google: { families: [ font ] }
     };
@@ -27,7 +27,7 @@
     // SEVEN ELEVEN
     // ============
     if(brand_name == 'seveneleven') {
-      $.fn.convenience_store.include_font("Oswald:700:latin");
+      $.fn.convenience_store.load_font("Oswald:700:latin");
       $this.css({
         "background-color": "#fff",
         "position": "relative"
@@ -58,6 +58,7 @@
         "font-style": "normal",
         "font-weight": "bold",
         "left": "2%",
+        "letter-spacing": "-0.01em",
         "line-height": "1.2",
         "padding": p + "px 1.5%",
         "position": "absolute",
@@ -69,7 +70,9 @@
       var $line3 = $('<div>').css(style3);
       $title = $('<div>').css(style_title).html(title);
       $this.append($line1, $line2, $line3, $title);
-      var h = ($title.height() + p*2 - m*2)/3 + 'px';
+      var h_ttl_int = $title.height()*3/4;
+      var h = (h_ttl_int + p*2 - m*3)/3 + 'px';
+      $title.css({'height': h_ttl_int + 'px', 'font-size': (h_ttl_int*4/5) + 'px'});
       $line1.css('height', h);
       $line2.css('height', h);
       $line3.css('height', h);
@@ -78,7 +81,7 @@
     // FamilyMart
     // ==========
     else if(brand_name == 'familymart') {
-      $.fn.convenience_store.include_font("PT+Sans:700:latin");
+      $.fn.convenience_store.load_font("PT+Sans:700:latin");
       $this.css({
         "background-color": "#fff",
         "line-height": "1.0",
@@ -106,7 +109,7 @@
     // LAWSON or OWSON
     // ===============
     else if(brand_name == 'lawson' || brand_name == 'owson') {
-      $.fn.convenience_store.include_font("Graduate"); // 'Kameron:700', 'Podkova:700', 'Noticia+Text:700', 'Crete+Round', 'Kreon:700', 'Maiden+Orange::latin','Smokum::latin', 'Bevan::latin', 'Wellfleet::latin'
+      $.fn.convenience_store.load_font("Graduate"); // 'Kameron:700', 'Podkova:700', 'Noticia+Text:700', 'Crete+Round', 'Kreon:700', 'Maiden+Orange::latin','Smokum::latin', 'Bevan::latin', 'Wellfleet::latin'
       $this.css({
         "background-color": "#1c7dc2",
         "line-height": "1.0",
